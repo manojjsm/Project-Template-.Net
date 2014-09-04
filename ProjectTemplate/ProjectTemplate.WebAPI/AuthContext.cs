@@ -9,7 +9,7 @@ namespace ProjectTemplate.WebAPI
     public class AuthContext : IdentityDbContext<IdentityUser>
     {
         public AuthContext()
-            : base("AuthContext")
+            : base("Development")
         { 
         
         }
