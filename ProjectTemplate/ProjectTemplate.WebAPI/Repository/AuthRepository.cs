@@ -15,6 +15,12 @@ namespace ProjectTemplate.WebAPI.Repository
 
         private UserManager<IdentityUser> _userManager;
 
+        public AuthRepository()
+        {
+            _ctx = new AuthContext();
+            _userManager = new UserManager<IdentityUser>(new UserStore<IdentityUser>(_ctx));
+        }
+
         public async Task<IdentityResult> RegisterUser(ModelUser ModelUser)
         {
             IdentityUser user = new IdentityUser
