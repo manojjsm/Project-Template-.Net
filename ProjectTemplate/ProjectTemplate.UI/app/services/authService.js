@@ -5,7 +5,7 @@ token can be sent with each request to access secure resources on the back-end A
 'use strict';
 
 app.factory('authService', ['$http', '$q', 'localStorageService', function ($http, $q, localStorageService) {
-    var serviceBase = 'http://localhost:5193/'
+    var serviceBase = 'http://localhost:54074/'
     var authServiceFactory = {};
 
     var _authentication = {
