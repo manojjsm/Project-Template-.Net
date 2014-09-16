@@ -73,9 +73,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\app.js" />
+    <Content Include="app\services\authService.js" />
     <Content Include="content\css\bootstrap-yeti.min.css" />
     <Content Include="content\css\loading-bar.min.css" />
     <Content Include="content\css\site.css" />
+    <Content Include="content\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="index.html" />
     <Content Include="scripts\angular-animate.min.js" />
     <Content Include="scripts\angular-loader.min.js" />
@@ -96,6 +98,9 @@
     <Content Include="scripts\angular-resource.min.js.map" />
     <Content Include="scripts\angular-route.min.js.map" />
     <Content Include="scripts\angular.min.js.map" />
+    <Content Include="content\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="content\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="content\fonts\glyphicons-halflings-regular.woff" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -105,7 +110,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="app\controllers\" />
-    <Folder Include="app\services\" />
     <Folder Include="app\views\" />
   </ItemGroup>
   <PropertyGroup>
