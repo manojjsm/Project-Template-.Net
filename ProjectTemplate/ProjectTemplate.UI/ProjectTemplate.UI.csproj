@@ -74,6 +74,7 @@
   <ItemGroup>
     <Content Include="app\app.js" />
     <Content Include="app\services\authService.js" />
+    <Content Include="app\views\signup.html" />
     <Content Include="content\css\bootstrap-yeti.min.css" />
     <Content Include="content\css\loading-bar.min.css" />
     <Content Include="content\css\site.css" />
@@ -110,7 +111,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="app\controllers\" />
-    <Folder Include="app\views\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
