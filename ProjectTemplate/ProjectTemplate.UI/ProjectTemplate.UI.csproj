@@ -73,11 +73,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\app.js" />
-    <Content Include="content\css\bootstrap-yeti.css" />
     <Content Include="content\css\bootstrap-yeti.min.css" />
     <Content Include="content\css\loading-bar.min.css" />
+    <Content Include="content\css\site.css" />
+    <Content Include="index.html" />
     <Content Include="scripts\angular-animate.min.js" />
     <Content Include="scripts\angular-loader.min.js" />
+    <Content Include="scripts\angular-local-storage.js" />
     <Content Include="scripts\angular-resource.min.js" />
     <Content Include="scripts\angular-route.min.js" />
     <Content Include="scripts\angular.min.js" />
