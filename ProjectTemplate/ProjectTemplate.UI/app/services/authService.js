@@ -9,8 +9,8 @@ app.factory('authService', ['$http', '$q', 'localStorageService', function ($htt
     var authServiceFactory = {};
 
     var _authentication = {
-        usAuth: false,
-        userName:""
+        isAuth: false,
+        userName: ""
     };
 
     //this method will return a promise that will be resolved at the controller
@@ -31,9 +31,9 @@ app.factory('authService', ['$http', '$q', 'localStorageService', function ($htt
     var _login = function (loginData) {
 
         var data = "grant_type=password&username=" + loginData.userName + "&password=" + loginData.password;
-        
-        var deffered = $q.defer();
-        
+
+        var deferred = $q.defer();
+
         //verify the username and password by our WebAPI
         //we have set the content-type "x-www-form-urlencoded" and sent our data as a string not as JSON Object
         $http.post(serviceBase + 'token', data, { headers: { 'Content-Type': 'application/x-www-form-urlencoded' } }).success(function (response) {
@@ -64,8 +64,7 @@ app.factory('authService', ['$http', '$q', 'localStorageService', function ($htt
     var _fillAuthData = function () {
 
         var authData = localStorageService.get('authorizationData');
-        if (authData)
-        {
+        if (authData) {
             _authentication.isAuth = true;
             _authentication.userName = authData.userName;
         }

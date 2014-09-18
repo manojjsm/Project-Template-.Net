@@ -3,7 +3,7 @@ we can consider module as a collection of services, directives and filters which
 by our application*/
 
 //initializing our angular modules
-var app = angular.module('AngularAuthApp',['ngRoute','LocalStorageModule','angular-loading-bar']);
+var app = angular.module('AngularAuthApp',['ngRoute', 'LocalStorageModule', 'angular-loading-bar']);
 
 //configuration our routes
 app.config(function ($routeProvider) {
