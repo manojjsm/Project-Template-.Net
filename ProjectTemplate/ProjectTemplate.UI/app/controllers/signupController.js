@@ -22,7 +22,7 @@ app.controller('signupController',['$scope','$location','$timeout','authService'
             for (var key in response.data.modelState) {
                 for (var i = 0; i < response.data.modelState[key].length; i++)
                 {
-                    errors.push(response.data.modelState[ket][i]);
+                    errors.push(response.data.modelState[key][i]);
                 }
             }
             $scope.message = "Failed to register user due to:" + errors.join(' ');
