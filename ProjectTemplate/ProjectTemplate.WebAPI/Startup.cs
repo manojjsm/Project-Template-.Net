@@ -45,9 +45,9 @@ namespace ProjectTemplate.WebAPI
             {
                 AllowInsecureHttp = true,
                 TokenEndpointPath = new PathString("/token"), //The path for generating tokens will be as :”http://localhost:port/token”
-                AccessTokenExpireTimeSpan = TimeSpan.FromDays(1), //set token expiry to 24 hours
-                Provider = new SimpleAuthorizationServerProvider() //specified the implementation on how to validate the user credentials asking for tokens in custom class named SimpleAuthorizationServrProvider
-                
+                AccessTokenExpireTimeSpan = TimeSpan.FromMinutes(30), //set token expiry to 24 hours
+                Provider = new SimpleAuthorizationServerProvider(), //specified the implementation on how to validate the user credentials asking for tokens in custom class named SimpleAuthorizationServrProvider
+                RefreshTokenProvider = new SimpleRefreshTokenProvider() //this will provide the refresh token.
             };
 
             //Token Generation
