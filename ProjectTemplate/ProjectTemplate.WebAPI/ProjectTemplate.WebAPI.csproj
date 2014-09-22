@@ -126,6 +126,7 @@
     <Compile Include="Entities\Client.cs" />
     <Compile Include="Entities\RefreshToken.cs" />
     <Compile Include="Helper.cs" />
+    <Compile Include="Migration\Configuration.cs" />
     <Compile Include="Models\Enum.cs" />
     <Compile Include="Models\ModelUser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

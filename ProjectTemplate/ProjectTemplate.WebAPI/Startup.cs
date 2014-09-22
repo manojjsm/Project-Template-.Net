@@ -1,9 +1,11 @@
 ﻿using Microsoft.Owin;
 using Microsoft.Owin.Security.OAuth;
 using Owin;
+using ProjectTemplate.WebAPI.Migration;
 using ProjectTemplate.WebAPI.Providers;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Http;
@@ -34,6 +36,7 @@ namespace ProjectTemplate.WebAPI
             app.UseCors(Microsoft.Owin.Cors.CorsOptions.AllowAll);
             //Responsible to wire up ASP.Net Web API to our Owin server pipeline
             app.UseWebApi(config);
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<AuthContext, Configuration>());
         }
         /// <summary>
         /// Configuration for the OAuth
