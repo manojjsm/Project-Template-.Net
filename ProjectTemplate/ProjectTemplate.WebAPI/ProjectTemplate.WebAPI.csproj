@@ -125,6 +125,7 @@
     <Compile Include="Controllers\OrdersController.cs" />
     <Compile Include="Entities\Client.cs" />
     <Compile Include="Entities\RefreshToken.cs" />
+    <Compile Include="Helper.cs" />
     <Compile Include="Models\Enum.cs" />
     <Compile Include="Models\ModelUser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
